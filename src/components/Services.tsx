@@ -54,24 +54,23 @@ export default function Services() {
             return (
               <div 
                 key={index} 
-                className="text-center group transition-all duration-300 hover:-translate-y-2 rounded-xl p-6 bg-white border border-gray-100 relative overflow-hidden"
+                className="text-center group transition-all duration-300 hover:-translate-y-2 rounded-xl p-8 bg-white shadow-lg"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative z-10">
-                  <div className="flex justify-center">
-                    <div className="p-4 bg-indigo-100 rounded-lg group-hover:bg-indigo-600 transition-colors duration-300 shadow-md group-hover:shadow-lg">
-                      <IconComponent className="h-8 w-8 text-indigo-600 group-hover:text-white transition-colors duration-300" />
-                    </div>
-                  </div>
-                  <h3 className="mt-6 text-lg font-medium text-gray-900 group-hover:text-indigo-600 transition-colors duration-300">{service.title}</h3>
-                  <p className="mt-2 text-base text-gray-500">{service.description}</p>
-                  <ul className="mt-4 space-y-2">
-                    {service.features.map((feature, i) => (
-                      <li key={i} className="text-gray-500 group-hover:text-gray-700 transition-colors duration-300">{feature}</li>
-                    ))}
-                  </ul>
+                <div className="flex items-center justify-center w-12 h-12 bg-indigo-100 rounded-lg mx-auto">
+                  <IconComponent className="h-6 w-6 text-indigo-600" />
                 </div>
-                <div className="absolute inset-0 shadow-[0_0_15px_rgba(0,0,0,0.1)] group-hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] transition-shadow duration-300 rounded-xl"></div>
+                <h3 className="mt-6 text-xl font-semibold text-gray-900">{service.title}</h3>
+                <p className="mt-2 text-base text-gray-500">{service.description}</p>
+                <div className="mt-4 flex flex-wrap gap-2 justify-center">
+                  {service.features.map((feature, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-sm"
+                    >
+                      {feature}
+                    </span>
+                  ))}
+                </div>
               </div>
             );
           })}
