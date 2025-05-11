@@ -4,15 +4,21 @@ import { GraduationCap, Stethoscope, Code, Server, Building2, Smartphone } from 
 const services = [
   {
     icon: GraduationCap,
-    title: 'School Management Software',
+    title: 'School Management System',
     description: 'Comprehensive education management system designed for schools, colleges, and universities.',
     features: ['Admission Management', 'Academic Planning', 'Fee Management', 'Student Portal']
   },
   {
     icon: Stethoscope,
-    title: 'Software for Hospital Management',
+    title: 'Hospital Management System',
     description: 'Integrated healthcare management solution for hospitals and clinics.',
     features: ['Patient Management', 'Appointment Scheduling', 'Billing System', 'Medical Records']
+  },
+  {
+    icon: Building2,
+    title: 'Legal Sector Solutions',
+    description: 'Specialized software solutions for legal practices and institutions.',
+    features: ['Case Management', 'Document Management', 'Client Portal', 'Billing & Time Tracking']
   },
   {
     icon: Code,
@@ -32,12 +38,7 @@ const services = [
     description: 'IaaS, SaaS, and PaaS infrastructure for scalable business operations.',
     features: ['Cloud Migration', 'Infrastructure Setup', 'Managed Services', 'Security Solutions']
   },
-  {
-    icon: Building2,
-    title: 'Legal Sector Solutions',
-    description: 'Specialized software solutions for legal practices and institutions.',
-    features: ['Case Management', 'Document Management', 'Client Portal', 'Billing & Time Tracking']
-  }
+  
 ];
 
 export default function Services() {
@@ -45,7 +46,7 @@ export default function Services() {
     <div className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h2>
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Services</h2>
           <p className="mt-4 text-xl text-gray-600">Comprehensive solutions for your industry needs</p>
         </div>
         <div className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">

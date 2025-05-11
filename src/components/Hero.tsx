@@ -8,11 +8,11 @@ export default function Hero() {
         <div className="relative z-10">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight">
-              Transform Your Business with
-              <span className="block text-blue-200">Enterprise Solutions</span>
+              Transforming Operations with
+              <span className="block text-blue-200">Intelligent Cloud Solutions</span>
             </h1>
-            <p className="mt-6 max-w-2xl mx-auto text-xl text-blue-100">
-              Kolkata's leading technology firm specializing in ERP solutions for education, healthcare, and legal sectors. Empowering organizations with cutting-edge SaaS and PaaS solutions.
+            <p className="mt-6 max-w-3xl mx-auto text-xl text-blue-100 leading-relaxed">
+              Delivering advanced Learning Management Systems, Hospital & Diagnostic Center Management, and Lawyer Management Platforms — all powered by our scalable SaaS and PaaS-based cloud architecture. Empowering institutions with streamlined, secure, and future-ready ERP solutions.
             </p>
             <div className="mt-10">
               <a href="#contact" className="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-blue-50 transition duration-150">

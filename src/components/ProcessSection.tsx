@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lightbulb, Code, TestTube, Rocket } from 'lucide-react';
+import { Lightbulb, FileText, Code, TestTube, Rocket } from 'lucide-react';
 
 const processes = [
   {
@@ -9,22 +9,28 @@ const processes = [
     color: 'from-blue-500 to-indigo-500'
   },
   {
+    icon: FileText,
+    title: 'Documentation',
+    description: 'Preparation of technical and functional specifications for transparency and planning.',
+    color: 'from-indigo-500 to-purple-500'
+  },
+  {
     icon: Code,
     title: 'Development',
     description: 'Our expert team builds your solution using cutting-edge technologies.',
-    color: 'from-indigo-500 to-purple-500'
+    color: 'from-purple-500 to-pink-500'
   },
   {
     icon: TestTube,
     title: 'Testing & QA',
     description: 'Rigorous testing ensures high quality and reliable performance.',
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-pink-500 to-red-500'
   },
   {
     icon: Rocket,
     title: 'Deployment & Support',
     description: 'We handle deployment and provide ongoing maintenance and support.',
-    color: 'from-pink-500 to-red-500'
+    color: 'from-red-500 to-orange-500'
   }
 ];
 
@@ -43,9 +49,9 @@ export default function ProcessSection() {
 
         <div className="mt-20 relative">
           {/* Animated connecting line */}
-          <div className="absolute top-1/2 left-4 right-4 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 transform -translate-y-1/2 hidden lg:block rounded-full animate-pulse"></div>
+          <div className="absolute top-1/2 left-4 right-4 h-1 bg-gradient-to-r from-blue-500 via-purple-500 via-pink-500 via-red-500 to-orange-500 transform -translate-y-1/2 hidden lg:block rounded-full animate-pulse"></div>
           
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
             {processes.map((process, index) => {
               const IconComponent = process.icon;
               return (

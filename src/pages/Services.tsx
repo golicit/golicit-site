@@ -70,13 +70,13 @@ export default function Services() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div className="p-6">
+              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col h-full">
+                <div className="p-6 flex flex-col flex-grow">
                   <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
                     <IconComponent className="h-6 w-6 text-indigo-600" />
                   </div>
                   <h3 className="mt-4 text-xl font-semibold text-gray-900">{service.title}</h3>
-                  <p className="mt-2 text-gray-600">{service.description}</p>
+                  <p className="mt-2 text-gray-600 flex-grow">{service.description}</p>
                   <ul className="mt-4 space-y-2">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-center text-gray-600">
@@ -85,9 +85,11 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <button className="mt-6 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-150">
-                    Learn More
-                  </button>
+                  <div className="mt-6">
+                    <button className="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 transition duration-150">
+                      Learn More
+                    </button>
+                  </div>
                 </div>
               </div>
             );

@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import Industries from './pages/Industries';
 import Portfolio from './pages/Portfolio';
 import Careers from './pages/Careers';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>

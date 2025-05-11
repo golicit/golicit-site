@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <TechStack />
       <ProcessSection />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactForm />
       <Footer />
     </div>
