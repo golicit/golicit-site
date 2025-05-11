@@ -105,7 +105,7 @@ export default function Industries() {
             })}
           </div>
         </div>
-        <Footer />
+        
       </div>
     </>
   );

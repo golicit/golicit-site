@@ -23,7 +23,7 @@ export default function Home() {
         <ProcessSection />
         {/* <Testimonials /> */}
         <ContactForm />
-        <Footer />
+        
       </div>
     </>
   );

@@ -96,7 +96,6 @@ export default function Careers() {
             </button>
           </div>
         </div>
-        <Footer />
       </div>
     </>
   );

@@ -16,7 +16,7 @@ const products = [
     description: 'Scalable cloud infrastructure management platform for optimal performance and cost efficiency.',
     features: ['Auto-scaling', 'Load Balancing', 'Resource Optimization', 'Cost Analytics'],
     price: '$199/month'
-  },
+  },  
   {
     name: 'DevStack Suite',
     icon: Code,
@@ -70,7 +70,7 @@ export default function Products() {
           })}
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }
