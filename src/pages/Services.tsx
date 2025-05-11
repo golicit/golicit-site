@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import { Server, Shield, Code, Database, Cloud, Users, Cpu, LineChart, Globe, Award } from 'lucide-react';
+import { Server, Shield, Code, Database, Cloud, Users, Cpu, LineChart, Globe, Award, Target } from 'lucide-react';
 import Footer from '../components/Footer';
 
 const services = [
