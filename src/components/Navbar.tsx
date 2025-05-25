@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link to="/" className="flex items-center space-x-4">
               <div className="w-[68px] h-[68px] rounded-full overflow-hidden bg-white/90 backdrop-blur-sm">
                 <img 
-                  src="/logo_header.png" 
+                  src="/logosvg3.svg" 
                   alt="GoLicit Logo" 
                   className="w-full h-full object-contain mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-200" 
                 />
