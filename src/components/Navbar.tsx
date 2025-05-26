@@ -1,18 +1,18 @@
-import React from 'react';
-import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const navItems = [
     // { path: '/products', label: 'Products' },
-    { path: '/services', label: 'Services' },
-    { path: '/industries', label: 'Industries' },
+    { path: "/services", label: "Services" },
+    { path: "/industries", label: "Industries" },
     // { path: '/portfolio', label: 'Portfolio' },
-    { path: '/careers', label: 'Careers' },
-    { path: '/about', label: 'About' },
-    { path: '/contact', label: 'Contact' }
+    { path: "/careers", label: "Careers" },
+    { path: "/about", label: "About" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
@@ -20,21 +20,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center space-x-4">
-              <div className="w-[68px] h-[68px] rounded-full overflow-hidden bg-white/90 backdrop-blur-sm">
-                <img 
-                  src="/logosvg3.svg" 
-                  alt="GoLicit Logo" 
-                  className="w-full h-full object-contain mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-200" 
+            <Link to="/" className="flex items-center">
+              <div className="w-[200px] h-[80px] bg-white/90 backdrop-blur-sm">
+                <img
+                  src="/logosvg3.svg"
+                  alt="GoLicit Logo"
+                  className="w-full h-full object-contain mix-blend-multiply opacity-90 hover:opacity-100 transition-opacity duration-200"
                 />
-              </div>
-              <div className="flex items-center">
-                <span className="text-[34px] font-bold text-gray-900">GoLicit</span>
-                <span className="text-[22px] text-teal-600 ml-2">Services</span>
               </div>
             </Link>
           </div>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-2">
             {navItems.map((item) => (
